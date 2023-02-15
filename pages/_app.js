@@ -1,8 +1,15 @@
+import GA4React from 'ga-4-react';
 import '../styles/globals.css';
 import Layout from '@/core/layout';
 import Head from 'next/head';
 
+const ga4react = new GA4React('G-8SL70593HP');
+
 function MyApp({ Component, pageProps }) {
+  ga4react
+    .initialize()
+    .then((res) => console.log('Analytics Success'))
+    .catch((err) => console.log('Analytics Failure'));
   return (
     <div>
       <Head>
