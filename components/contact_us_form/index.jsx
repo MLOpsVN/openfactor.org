@@ -43,7 +43,7 @@ const ContactUsForm = () => {
       return;
     }
 
-    const body = JSON.stringify({ name: title, email: yourEmail, code: content });
+    const body = JSON.stringify({ title: title, email: yourEmail, content: content });
     fetch(apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
