@@ -10,7 +10,7 @@ const Banner = () => {
         OPEN FACTOR FOUNDATION commits to enable Vietnamese youth to bring inclusive and effective AI solutions to industries and sectors. We empower the youth with systematic and practical best practices from global AI industry tailored for Vietnam market
         </div>
         <div>
-          <a href="#vision">Follow Us</a>
+          <a href="#founders">About us</a>
         </div>
       </div>
       <div className={styles.img_bg}></div>

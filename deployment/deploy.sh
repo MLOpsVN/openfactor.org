@@ -8,7 +8,7 @@ if [[ -z "$cmd" ]]; then
 fi
 
 gen_image_info() {
-    IMAGE_PATH="${IMAGE_PATH:-mlops.vn}"
+    IMAGE_PATH="${IMAGE_PATH:-openfactor.org}"
     IMAGE_TAG="${IMAGE_TAG:-$(git describe --always)}"
 }
 

@@ -19,25 +19,13 @@ const Header = () => {
 };
 
 const menu = [
-  // {
-  //   title: 'About',
-  //   path: '#vision',
-  // },
-  // {
-  //   title: 'Activities',
-  //   path: '#activities',
-  // },
   {
-    title: 'Founder',
-    path: '#founder',
+    title: 'Founders',
+    path: '#founders',
   },
   {
-    title: 'Registration',
-    path: '#registration',
-  },
-  {
-    title: 'Contact',
-    path: '#contact',
+    title: 'Contact us',
+    path: '#contact-us',
   },
 ];
 

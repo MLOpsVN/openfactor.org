@@ -1,24 +1,24 @@
 import { useState } from 'react';
-import styles from './registration_form.module.scss';
+import styles from './contact_us_form.module.scss';
 
-const apiUrl = 'https://api.aihub.ml/v1/mcc/links';
+const apiUrl = 'https://api.aihub.ml/v1/contact_us';
 
-const RegistrationForm = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [code, setCode] = useState('');
+const ContactUsForm = () => {
+  const [title, setTitle] = useState('');
+  const [yourEmail, setYourEmail] = useState('');
+  const [content, setContent] = useState('');
   const [allowContact, setAllowContact] = useState(false);
 
-  const onNameChange = (e) => {
-    setName(e.target.value);
+  const onTitleChange = (e) => {
+    setTitle(e.target.value);
   };
 
-  const onEmailChange = (e) => {
-    setEmail(e.target.value);
+  const onYourEmailChange = (e) => {
+    setYourEmail(e.target.value);
   };
 
-  const onAccessCodeChange = (e) => {
-    setCode(e.target.value);
+  const onContentChange = (e) => {
+    setContent(e.target.value);
   };
 
   const onAllowContactChange = (e) => {
@@ -26,31 +26,31 @@ const RegistrationForm = () => {
   };
 
   const onSubmit = () => {
-    if (name === '') {
-      alert('Name cannot be empty.');
+    if (title === '') {
+      alert('Title cannot be empty.');
       return;
     }
-    if (email === '') {
-      alert('Email cannot be empty.');
+    if (yourEmail === '') {
+      alert('Your email cannot be empty.');
       return;
     }
-    if (code === '') {
-      alert('Access code cannot be empty.');
+    if (content === '') {
+      alert('Content cannot be empty.');
       return;
     }
     if (allowContact === false) {
-      alert('You need to allow us to contact you in order to send the download link to your email.');
+      alert('We might need to contact you for further assistance.');
       return;
     }
 
-    const body = JSON.stringify({ name: name, email: email, code: code });
+    const body = JSON.stringify({ name: title, email: yourEmail, code: content });
     fetch(apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: body,
     })
       .then((res) => {
-        alert('Succeed! Please check your email.');
+        alert('Thank you for contacting us.');
       })
       .catch((error) => {
         console.log(error);
@@ -61,13 +61,13 @@ const RegistrationForm = () => {
   return (
     <>
       <div className={styles.input}>
-        <input placeholder="*Name" onChange={onNameChange} />
+        <input placeholder="*Title" onChange={onTitleChange} />
       </div>
       <div className={styles.input}>
-        <input placeholder="*Email" onChange={onEmailChange} />
+        <input placeholder="*Your email" onChange={onYourEmailChange} />
       </div>
       <div className={styles.textarea}>
-        <textarea placeholder="*Content" onChange={onAccessCodeChange} />
+        <textarea placeholder="*Content" onChange={onContentChange} />
       </div>
       <div className={styles.checkbox}>
         <label className={styles.container}>
@@ -77,10 +77,10 @@ const RegistrationForm = () => {
         </label>
       </div>
       <div className={styles.submit} onClick={onSubmit}>
-        Register
+        Submit
       </div>
     </>
   );
 };
 
-export default RegistrationForm;
+export default ContactUsForm;

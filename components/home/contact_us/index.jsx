@@ -1,19 +1,19 @@
-import RegistrationForm from '@/components/registration_form';
+import ContactUsForm from '@/components/contact_us_form';
 import TitleSection from '@/components/title_section';
-import styles from './registration.module.scss';
+import styles from './contact_us.module.scss';
 
-const Registration = () => {
+const ContactUs = () => {
   return (
     <>
-      <div className={styles.root} id="registration">
+      <div className={styles.root} id="contact-us">
         <div className={styles.content_w}>
           <div className={styles.img}></div>
           <div className={styles.form}>
             <div>
-              <TitleSection title={'Registration'} />
+              <TitleSection title={'Contact us'} />
             </div>
             <div className={styles.content}>
-              <RegistrationForm />
+              <ContactUsForm />
             </div>
           </div>
         </div>
@@ -22,4 +22,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default ContactUs;

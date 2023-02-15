@@ -4,7 +4,7 @@ import styles from './founder.module.scss';
 
 const Founder = () => {
   return (
-    <div className={styles.root} id="instructors">
+    <div className={styles.root} id="founders">
       <div className={styles.content_w}>
         <div className={styles.title}>
           <TitleSection title={'Founders'} />
@@ -56,10 +56,10 @@ const founders = [
     org: 'UCC, Ireland',
   },
   {
-    img: '/founders/harry-nguyen.jpeg',
-    name: 'Harry Nguyen',
-    title: 'Founder/Tech mentor',
-    role: 'Assistant Professor',
-    org: 'UCC, Ireland',
+    img: '/founders/long-pham.png',
+    name: 'DR. Long Pham',
+    title: 'Communication Mentor',
+    role: 'Senior Researcher',
+    org: 'Coordinator - AI4EU',
   },
 ];
