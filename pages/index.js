@@ -1,4 +1,6 @@
 import Banner from '@/components/home/banner';
+import Vision from '@/components/home/vision/vision';
+import Mission from '@/components/home/mission';
 import Founder from '@/components/home/founder';
 import ContactUsForm from '@/components/home/contact_us';
 import styles from '../styles/Home.module.scss';
@@ -11,6 +13,10 @@ const Home = () => {
   return (
     <div className={styles.root}>
       <Banner />
+      <Vision />
+      <Line direction={'left'} width={randomWidth()} />
+      <Mission />
+      <Line direction={'right'} width={randomWidth()} />
       <Founder />
       <Line direction={'right'} width={randomWidth()} />
       <ContactUsForm />

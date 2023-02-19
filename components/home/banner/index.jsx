@@ -7,7 +7,7 @@ const Banner = () => {
       <div className={styles.intro}>
         <div>Open Factor Foundation</div>
         <div>
-        OPEN FACTOR FOUNDATION commits to enable Vietnamese youth to bring inclusive and effective AI solutions to industries and sectors. We empower the youth with systematic and practical best practices from global AI industry tailored for Vietnam market
+          Empowering Youth to Innovate with AI for a Better Future
         </div>
         <div>
           <a href="#founders">About us</a>
