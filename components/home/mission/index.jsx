@@ -39,7 +39,7 @@ const Mission = () => {
                 <TitleSection title={'Mission'} />
               </div>
               <div className={styles.content}>
-                At Open Factor Foundation, our mission is to promote efficiency and innovation in Vietnam's industries and sectors by empowering young people to create impactful and inclusive AI solutions. Through our comprehensive guidance and best practices, we aim to provide the tools and knowledge necessary for the next generation of AI leaders to make a positive impact on the country's future. By fostering creativity and innovation, and by adapting AI solutions to the unique needs of Vietnam's market, we can drive sustainable growth and help build a more prosperous and inclusive society for all.
+                At Open Factor Foundation, our mission is to promote efficiency and innovation in Vietnam&apos;s industries and sectors by empowering young people to create impactful and inclusive AI solutions. Through our comprehensive guidance and best practices, we aim to provide the tools and knowledge necessary for the next generation of AI leaders to make a positive impact on the country&apos;s future. By fostering creativity and innovation, and by adapting AI solutions to the unique needs of Vietnam&apos;s market, we can drive sustainable growth and help build a more prosperous and inclusive society for all.
               </div>
             </div>
           </Animate>
