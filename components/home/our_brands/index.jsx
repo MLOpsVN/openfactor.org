@@ -32,17 +32,20 @@ export default OurBrands;
 
 const brands = [
   {
-    img: '/Logo_ngang.png',
+    img: '/Logo_k_chu.png',
+    title: "Open Factor Foundation",
     name: 'MLOpsVN',
     link: 'https://mlops.vn',
   },
   {
-    img: '/Logo_ngang.png',
+    img: '/Logo_k_chu.png',
+    title: "Open Factor Foundation",
     name: 'AIHub.ML',
     link: 'https://aihub.ml',
   },
   {
-    img: '/Logo_ngang.png',
+    img: '/Logo_k_chu.png',
+    title: "Open Factor Foundation",
     name: 'Academy',
     link: 'https://courses.aihub.ml',
   },
