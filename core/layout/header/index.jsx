@@ -24,6 +24,10 @@ const menu = [
     path: '#founders',
   },
   {
+    title: 'Our brands',
+    path: '#our-brands',
+  },
+  {
     title: 'Contact us',
     path: '#contact-us',
   },

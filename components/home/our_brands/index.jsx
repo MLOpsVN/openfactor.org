@@ -5,7 +5,7 @@ import styles from './our_brands.module.scss';
 const OurBrands = () => {
   return (
     <>
-      <div className={styles.root} id="our_brands">
+      <div className={styles.root} id="our-brands">
         <div className={styles.content_w}>
           <div className={styles.img}></div>
           <div className={styles.form}>

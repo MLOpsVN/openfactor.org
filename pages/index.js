@@ -19,10 +19,10 @@ const Home = () => {
       <Mission />
       <Line direction={'right'} width={randomWidth()} />
       <Founder />
-      <Line direction={'left'} width={randomWidth()} />
-      <ContactUsForm />
       <Line direction={'right'} width={randomWidth()} />
       <OurBrands />
+      <Line direction={'left'} width={randomWidth()} />
+      <ContactUsForm />
     </div>
   );
 };
