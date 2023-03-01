@@ -6,12 +6,8 @@ const BrandCard = ({ img, name, title, link }) => {
   return (
     <div className={styles.root}>
       <div className={styles.img}>
-        <Image src={img} title={name} width={160} height={80} alt={name} />
-      </div>
-      <div className={styles.title}>{title}</div>
-      <div className={styles.name}>
         <Link href={link} target={'_blank'}>
-          {name}
+          <Image src={img} title={name} width={320} height={320} alt={name} />
         </Link>
       </div>
     </div>

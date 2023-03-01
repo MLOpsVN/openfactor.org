@@ -13,10 +13,10 @@ const OurBrands = () => {
               <TitleSection title={'Our brands'} />
             </div>
             <div className={styles.card}>
-          {brands?.map?.((founder, index) => {
+          {brands?.map?.((brand, index) => {
             return (
               <div className={styles.card_item} key={index}>
-                <BrandCard {...founder} />
+                <BrandCard {...brand} />
               </div>
             );
           })}
@@ -32,19 +32,19 @@ export default OurBrands;
 
 const brands = [
   {
-    img: '/Logo_k_chu.png',
+    img: '/foundation-MLOpsVN-chữ-trắng-08.png',
     title: "Open Factor Foundation",
     name: 'MLOpsVN',
     link: 'https://mlops.vn',
   },
   {
-    img: '/Logo_k_chu.png',
+    img: '/foundation-AIHub.ML-chữ-trắng-08.png',
     title: "Open Factor Foundation",
     name: 'AIHub.ML',
     link: 'https://aihub.ml',
   },
   {
-    img: '/Logo_k_chu.png',
+    img: '/foundation-Academy-chữ-trắng-08.png',
     title: "Open Factor Foundation",
     name: 'Academy',
     link: 'https://courses.aihub.ml',
