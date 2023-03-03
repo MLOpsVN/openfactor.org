@@ -1,0 +1,31 @@
+.root {
+  margin: 0 1rem;
+  width: 20rem;
+  padding: 1rem 0rem;
+
+  .img {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    color: white;
+  }
+  .name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--blue-300);
+    margin-top: 0.8rem;
+  }
+  .title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    margin-top: 0.8rem;
+  }
+}
+
+.text {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--white);
+}

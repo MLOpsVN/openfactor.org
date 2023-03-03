@@ -5,6 +5,7 @@ import Founder from '@/components/home/founder';
 import ContactUsForm from '@/components/home/contact_us';
 import styles from '../styles/Home.module.scss';
 import Line from '@/components/line';
+import OurBrands from '@/components/home/our_brands';
 
 const Home = () => {
   const randomWidth = () => {
@@ -19,6 +20,8 @@ const Home = () => {
       <Line direction={'right'} width={randomWidth()} />
       <Founder />
       <Line direction={'right'} width={randomWidth()} />
+      <OurBrands />
+      <Line direction={'left'} width={randomWidth()} />
       <ContactUsForm />
     </div>
   );
